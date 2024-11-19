@@ -1,0 +1,130 @@
+/* Estilo para el contenedor principal */
+#Uno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Establece el contenedor a ocupar el 100% del alto de la ventana */
+}
+
+/* Estilo para la imagen */
+.imagen-arriba {
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo para el formulario */
+#loginForm {
+    width: 300px; /* Ancho del formulario */
+}
+
+/* Estilo para los botones */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Centra horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+    
+}
+
+/* Estilo para los inputs */
+.form-floating {
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+
+
+
+
+:root {
+    --fondo: #d87093;
+    --fondo-resalte: #90415c;
+    --fondo-resalte2: #862d4d;
+}
+
+.bg-pink {
+    background-color: var(--fondo);
+}
+
+nav .form-control {
+    border-radius: 0;
+    border: none;
+    border-bottom: 5px solid var(--fondo-resalte);
+}
+
+nav .dropdown-item:hover {
+    color: white;
+    background-color: var(--fondo-resalte);
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+#carouselExampleAutoplaying {
+    height: calc(100vh - 3rem);
+}
+
+#carouselExampleAutoplaying img {
+    height: calc(100vh - 3rem);
+}
+
+.btn-pink {
+    background-color: var(--fondo-resalte);
+    color: white;
+}
+
+.btn-pink:hover {
+    background-color: var(--fondo-resalte2);
+    color: white;
+}
+
+.featurette-divider {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main {
+    min-height: calc(100vh - 11rem);
+}
+
+footer {
+    border-top: 5px solid var(--fondo);
+}
+
+form > div > div > div:not(.input-group) {
+    display: none;
+    color: red;
+}
+
+form.validado input:valid, .valido {
+    border: 1px solid green !important;
+}
+
+form.validado input:invalid ~ div,
+form div.row .novalido ~ div,
+form.validado .input-group:has(input:invalid) ~ div,
+form div div.input-group:has(.novalido) ~ div {
+    display: block;
+}
+
+form.validado input:invalid, .novalido {
+    border: 1px solid red !important;
+}
+
+/* Additional Styles */
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+}
+
+.imagen-arriba {
+    display: block;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+
+
